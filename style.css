@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid red; */
+}
+
+.container{
+    height: 100vh;
+    background-color: #E5FF96;
+}
+
+#logo{
+    font-family: 'Island Moments', cursive;
+    font-size: 44px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.nav-links{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #464646;
+}
+
+
+.contact-btn{
+    background-color: #464646;
+    color: #E5FF96;
+    border: none;
+    padding: 5px 20px;
+}
+
+
+.bi-list{
+    display: none;
+}
+
+
+.hero{
+    padding: 10px 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-section{
+    width: 50%;
+}
+
+.image-section img{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-section{
+    width: 50%;
+}
+
+.text-section h1{
+    font-size: 50px;
+    color: #464646;
+    margin-bottom: 20px;
+}
+
+.text-section p{
+    color: #464646;
+    font-size: 16px;
+}
+
+.play-section{
+    margin-top: 40px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-section span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-section p{
+    color: #464646;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.play-btn{
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bi-play-fill{
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.customers-circle{
+    border: #464646 2px solid;
+    height: 100px;
+    width: 100px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.customers-circle p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.client-circle{
+    background-color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.client-circle p{
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.description{
+    width: 80%;
+}
+
+
+/* Responsive */
+
+@media(max-width : 768px){
+    .nav-links{
+        display: none;
+    }
+
+    .bi-list{
+        display: block;
+        font-size: 30px;
+    }
+
+    .container{
+        height: auto;
+        padding: 0;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        padding: 5px 20px;
+    }
+
+    .image-section{
+        width: 100%;
+        padding: 0;
+    }
+
+    .image-section img{
+        position: static;
+        height: 300px;
+    }
+
+    .text-section{
+        width: 100%;
+    }
+
+ 
+
+    .text-section h1{
+      font-size:   34px;
+    }
+
+
+    .play-section{
+        width: 100%;
+    }
+
+    .client-circle{
+        height: 75px;
+        width: 75px;
+    }
+
+    .client-circle h2{
+        font-size : 18px
+    }
+    
+    .customers-circle{
+        height: 75px;
+        width: 75px;
+    }
+
+    .customers-circle h2{
+        font-size : 18px;
+    }
+
+    .play-btn{
+        height: 50px;
+        width: 50px;
+        font-size: 18px;
+    }
+
+
+}
